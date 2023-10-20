@@ -60,7 +60,7 @@ bindsym $mod+Shift+q kill
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 # A more modern dmenu replacement is rofi:
-# bindcode $mod+40 exec "rofi -modi drun,run -show drun"
+# bindsym $mod+d exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
@@ -192,12 +192,6 @@ bar {
         status_command i3status
 }
 
-# ToDo list
-# 
-# 1. Legge til Screenshot-funksjon
-# 3. Legge til keybinds for volum, brightness og andre function-keys
-# 4. Legge til bakgrunnsbilde
-
 # Fjerne titlebar
 default_border pixel 1
 
@@ -208,7 +202,8 @@ bindsym $sup+d exec discord
 bindsym $sup+s exec spotify
 bindsym $sup+o exec obsidian
 bindsym $sup+c exec code
+bindsym $sup+a exec arandr
 
-bindsym $mod+m exec xrandr --output DisplayPort-0 --off
-bindsym $mod+n exec xrandr --output DisplayPort-0 --mode 1920x1080 --right-of eDP
-bindsym $sup+r exec xrandr --output DisplayPort-0 --rotate left
+bindsym $sup+shift+s exec maim -s -u | xclip -selection clipboard -t image/png -i
+
+bindsym $sup+l exec i3lock -e -i ~/Pictures/bakgrunn/pog.png
