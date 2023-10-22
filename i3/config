@@ -201,6 +201,9 @@ bindsym $sup+o exec obsidian
 bindsym $sup+c exec code
 bindsym $sup+a exec arandr
 
+
+# Screenshot to clipboard
 bindsym $sup+shift+s exec maim -s -u | xclip -selection clipboard -t image/png -i
 
+# i3lock m/ bakgrunnsbilde
 bindsym $sup+l exec i3lock -e -i ~/Pictures/bakgrunn/pog.png
