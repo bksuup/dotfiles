@@ -5,5 +5,5 @@ alias swayconf='vim ~/.config/sway/config'
 # teite i3 greieri
 alias bright='brightnessctl set 100%'
 
-alias hackerman='sudo docker run -it --rm hackerman'
+alias hackerman='sudo docker run -it --rm hackermanv2'
 alias manhacker='sudo docker run -it --rm manhacker'
