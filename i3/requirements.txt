@@ -1,2 +1,3 @@
 arandr
 i3lock
+flameshot
