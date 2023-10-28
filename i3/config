@@ -196,7 +196,7 @@ default_border pixel 1
 bindsym $sup+b exec firefox
 bindsym $sup+e exec nautilus
 bindsym $sup+d exec discord
-bindsym $sup+s exec spotify
+bindsym $sup+m exec spotify
 bindsym $sup+o exec obsidian
 bindsym $sup+c exec code
 bindsym $sup+a exec arandr
@@ -206,5 +206,11 @@ bindsym $sup+l exec i3lock -e -i ~/Pictures/bakgrunn/pog.png
 
 
 # FLAMESHOT
+
+# Interactive screenshot som m/ selection, lagrer bare til clipboard
+# Keybind nr2 lagrer til ~/Pictures også
 bindsym $sup+shift+s exec flameshot gui -s -c
-# bindsym Print exec flameshot screen -p /home/$USER/Pictures
+# bindsym $sup+shift+s exec flameshot gui -s -c -p /home/$USER/Pictures
+
+# Tar screenshot av hele skjermen som pekeren er på og lagrer til ~/Pictures
+bindsym $sup+s exec flameshot screen -p /home/$USER/Pictures
