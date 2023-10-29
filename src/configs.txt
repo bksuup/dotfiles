@@ -1,6 +1,0 @@
-# path til filer som skal lagres
-
-i3
-sway
-vim
-bash
