@@ -196,7 +196,7 @@ default_border pixel 1
 bindsym $sup+b exec firefox
 bindsym $sup+e exec nautilus
 bindsym $sup+d exec discord
-bindsym $sup+m exec spotify
+bindsym $sup+s exec spotify
 bindsym $sup+o exec obsidian
 bindsym $sup+c exec code
 bindsym $sup+a exec arandr
@@ -213,4 +213,4 @@ bindsym $sup+shift+s exec flameshot gui -s -c
 # bindsym $sup+shift+s exec flameshot gui -s -c -p /home/$USER/Pictures
 
 # Tar screenshot av hele skjermen som pekeren er på og lagrer til ~/Pictures
-bindsym $sup+s exec flameshot screen -p /home/$USER/Pictures
+bindsym $sup+f exec flameshot screen -p /home/$USER/Pictures/Screenshots
