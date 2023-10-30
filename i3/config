@@ -200,6 +200,7 @@ bindsym $sup+s exec spotify
 bindsym $sup+o exec obsidian
 bindsym $sup+c exec code
 bindsym $sup+a exec arandr
+bindsym $sup+v exec virt-manager
 
 # i3lock m/ bakgrunnsbilde
 bindsym $sup+l exec i3lock -e -i ~/Pictures/bakgrunn/pog.png
