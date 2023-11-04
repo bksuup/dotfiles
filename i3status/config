@@ -35,7 +35,7 @@ battery all {
         format = "%status %percentage"
 	last_full_capacity = true
 	integer_battery_capacity = true
-	status_chr = "⚡ CHR"
+	status_chr = "⚡"
 }
 
 disk "/" {
@@ -60,6 +60,6 @@ tztime local {
 
 volume master {
         format = "♪: %volume"
-        format_muted = "♪: muted (%volume)"
+        format_muted = "♪:(%volume)"
         device = "pulse:1"
 }
