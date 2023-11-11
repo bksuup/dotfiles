@@ -200,8 +200,6 @@ bindsym $sup+v exec virt-manager
 bindsym $sup+b exec blueman-manager
 bindsym $sup+p exec 1password
 
-# for_window [class="1Password"] floating enable
-
 # i3lock m/ bakgrunnsbilde
 bindsym $sup+l exec i3lock -ec 000000
 
@@ -212,3 +210,8 @@ bindsym $sup+shift+s exec flameshot gui -s -c
 
 # Tar screenshot av hele skjermen som pekeren er på og lagrer til ~/Pictures
 bindsym $sup+f exec flameshot screen -c -p /home/$USER/Pictures/Screenshots
+
+# kalkulator app m/ speedcrunch
+bindsym XF86Calculator exec speedcrunch
+for_window [title="SpeedCrunch"] floating enable resize set 640 480
+for_window [class="SpeedCrunch"] floating enable resize set 640 480
