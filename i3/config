@@ -215,6 +215,9 @@ bindsym $sup+shift+s exec flameshot gui -s -c
 bindsym $sup+f exec flameshot screen -c -p /home/$USER/Pictures/Screenshots
 
 # kalkulator app m/ speedcrunch
-bindsym XF86Calculator exec speedcrunch
-for_window [title="SpeedCrunch"] floating enable resize set 640 480
-for_window [class="SpeedCrunch"] floating enable resize set 640 480
+# bindsym XF86Calculator exec speedcrunch
+# for_window [title="SpeedCrunch"] floating enable resize set 640 480
+# for_window [class="SpeedCrunch"] floating enable resize set 640 480
+
+# binder kalulator-knappen til å åpne en terminal med python3
+# bindsym XF86Calculator exec terminator -e "python3"
