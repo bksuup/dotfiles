@@ -28,7 +28,7 @@ font pango:monospace 10
 exec --no-startup-id dex --autostart --environment i3
 
 # Batterivarsel på først 20% og så 5%
-exec no-startup-id ~/tools/i3-battery-popup -L 20 -l 5 -n
+exec no-startup-id ~/tools/i3-battery-popup/i3-battery-popup -L 20 -l 5 -n
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
