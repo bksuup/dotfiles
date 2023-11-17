@@ -1,9 +1,8 @@
 # bakgrunnsbilde
 exec --no-startup-id /usr/bin/feh --bg-scale '/home/bk/Pictures/bakgrunn/pog.png'
 
-
 smart_gaps on
 smart_borders on
 
-gaps outer 2px
-gaps inner 10px
+gaps outer 10px
+gaps inner 20px
