@@ -1,4 +1,3 @@
 arandr - Display GUI
 flameshot - screenshot
 speedcrunch - kalkulator app
-https://github.com/rjekker/i3-battery-popup - Batterivarsel
