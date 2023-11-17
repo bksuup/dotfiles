@@ -184,7 +184,7 @@ bindsym $sup+b exec blueman-manager
 bindsym $sup+p exec 1password
 
 # i3lock m/ bakgrunnsbilde
-bindsym $sup+l exec i3lock -ec 000000
+bindsym $sup+l exec i3lock -i $HOME/.config/i3/background/irongiant_lock.png
 
 # FLAMESHOT
 bindsym $sup+shift+s exec flameshot gui -s -c
