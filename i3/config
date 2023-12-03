@@ -1,7 +1,7 @@
 # Todolist:
 
-# - picom
 # - Dunst
+#	- Volum/brightness - indikator
 
 
 # set mod key == alt
@@ -73,8 +73,8 @@ bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+t layout toggle split
+bindsym $mod+t layout tabbed
+bindsym $mod+w layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -184,11 +184,15 @@ bindsym $sup+b exec blueman-manager
 bindsym $sup+p exec 1password
 
 # i3lock m/ bakgrunnsbilde
-bindsym $sup+l exec i3lock -i $HOME/.config/i3/background/irongiant_lock.png
+bindsym $sup+l exec i3lock -e -i $HOME/.config/i3/background/irongiant_lock.png
 
 # FLAMESHOT
 bindsym $sup+shift+s exec flameshot gui -s -c
 bindsym $sup+f exec flameshot screen -c -p /home/$USER/Pictures/Screenshots
+
+# lukke dunst notifications i guess, vente å se om æ har bruk for det i guess
+# bindsym $mod+Control+space exec --no-startup-id dunstctl close
+# bindsym $mod+Control+Shift+space exec --no-startup-id dunstctl close-all
 
 # kalkulator app m/ speedcrunch
 bindsym XF86Calculator exec speedcrunch
@@ -200,7 +204,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 exec_always --no-startup-id feh --bg-fill $HOME/.config/i3/background/irongiant.webp
 exec --no-startup-id picom -b
-
+exec --no-startup-id dunst
 
 exec --no-startup-id blueman-applet
 exec --no-startup-id nm-applet
@@ -210,3 +214,8 @@ exec --no-startup-id nm-applet
 # TESTING
 
 # airblader dotfiles l: 178
+
+
+
+bindsym $mod+p exec --no-startup-id ~/.screenlayout/pc_only.sh
+bindsym $mod+g exec --no-startup-id ~/.screenlayout/gjemmekontor.sh
