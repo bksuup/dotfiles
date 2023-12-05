@@ -21,6 +21,6 @@ fi
 
 # If the battery is low and is not charging (and has not shown notification yet)
 if [ "$BATTERY_LEVEL" -le $WARNING_LEVEL ] && [ "$BATTERY_DISCHARGING" -eq 1 ] && [ ! -f $EMPTY_FILE ]; then
-    notify-send "Low Battery" "${BATTERY_LEVEL}% battery remaining." -u critical -t 300000
+    notify-send "Low Battery" "${BATTERY_LEVEL}% battery remaining." -u critical -t 150000
     touch $EMPTY_FILE
 fi
