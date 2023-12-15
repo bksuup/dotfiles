@@ -3,11 +3,35 @@
 [keybindings]
 [profiles]
   [[default]]
-    background_darkness = 0.66
-    cursor_color = "#aaaaaa"
+    background_color = "#161719"
+    background_darkness = 0.9
+    cursor_color = "#d0d0d0"
+    foreground_color = "#c5c8c6"
     show_titlebar = False
     scrollbar_position = hidden
     scrollback_infinite = True
+    palette = "#000000:#fd5ff1:#87c38a:#ffd7b1:#85befd:#b9b6fc:#85befd:#e0e0e0:#000000:#fd5ff1:#94fa36:#f5ffa8:#96cbfe:#b9b6fc:#85befd:#e0e0e0"
+    background_image = None
+  [[Afterglow]]
+    background_color = "#212121"
+    background_darkness = 0.9
+    cursor_color = "#d0d0d0"
+    foreground_color = "#d0d0d0"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_infinite = True
+    palette = "#151515:#ac4142:#7e8e50:#e5b567:#6c99bb:#9f4e85:#7dd6cf:#d0d0d0:#505050:#ac4142:#7e8e50:#e5b567:#6c99bb:#9f4e85:#7dd6cf:#f5f5f5"
+    background_image = None
+  [[Nord]]
+    background_color = "#2E3440"
+    background_darkness = 0.89
+    background_type = transparent
+    cursor_color = "#D8DEE9"
+    foreground_color = "#D8DEE9"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_infinite = True
+    palette = "#3B4252:#BF616A:#A3BE8C:#EBCB8B:#81A1C1:#B48EAD:#88C0D0:#E5E9F0:#4C566A:#BF616A:#A3BE8C:#EBCB8B:#81A1C1:#B48EAD:#8FBCBB:#ECEFF4"
 [layouts]
   [[default]]
     [[[window0]]]
