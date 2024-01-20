@@ -1,5 +1,0 @@
-arandr
-flameshot
-speedcrunch
-picom
-feh

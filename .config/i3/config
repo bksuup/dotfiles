@@ -30,7 +30,7 @@ floating_modifier $mod
 
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec terminator
+bindsym $mod+Return exec --no-startup-id alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -174,7 +174,8 @@ default_border pixel 1
 # Egne keybinds
 bindsym $sup+w exec firefox
 bindsym $sup+e exec nautilus
-bindsym $sup+d exec discord
+# bindsym $sup+d exec discord
+bindsym $sup+d exec --no-startup-id flatpak run com.discordapp.Discord
 bindsym $sup+s exec spotify
 bindsym $sup+o exec obsidian
 bindsym $sup+c exec code
@@ -187,22 +188,23 @@ bindsym $sup+p exec 1password
 bindsym $sup+l exec i3lock -e -i $HOME/.config/i3/background/irongiant_lock.png
 
 # FLAMESHOT
-bindsym $sup+shift+s exec flameshot gui -s -c
-bindsym $sup+f exec flameshot screen -c -p /home/$USER/Pictures/Screenshots
+bindsym $sup+shift+s exec --no-startup-id  flameshot gui -s -c
+bindsym $sup+f exec --no-startup-id flameshot screen -c -p /home/$USER/Pictures/Screenshots
 
 # lukke dunst notifications i guess, vente å se om æ har bruk for det i guess
 # bindsym $mod+Control+space exec --no-startup-id dunstctl close
 # bindsym $mod+Control+Shift+space exec --no-startup-id dunstctl close-all
 
 # kalkulator app m/ speedcrunch
-bindsym XF86Calculator exec speedcrunch
+bindsym XF86Calculator exec --no-startup-id speedcrunch
 for_window [class="SpeedCrunch"] floating enable, resize set 640 480
 
 
 # AUTOSTART
 exec --no-startup-id dex --autostart --environment i3
 
-exec_always --no-startup-id feh --bg-fill $HOME/.config/i3/background/irongiant.webp
+# exec_always --no-startup-id feh --bg-fill $HOME/.config/i3/background/irongiant.webp
+exec_always --no-startup-id feh --bg-fill $HOME/Pictures/bakgrunn/guta.jpg
 exec --no-startup-id picom -b
 exec --no-startup-id dunst
 
