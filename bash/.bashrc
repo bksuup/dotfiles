@@ -64,4 +64,4 @@ fi
 
 source /home/bk/tools/alacritty/extra/completions/alacritty.bash
 
-PS1='\w\\$ '
+PS1='\e[0;36m[\u:\w]\\$ \e[m'
