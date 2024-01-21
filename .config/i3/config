@@ -1,9 +1,5 @@
 # Todolist:
 
-# - Dunst
-#	- Volum/brightness - indikator
-
-
 # set mod key == alt
 set $mod Mod1
 
@@ -185,7 +181,7 @@ bindsym $sup+b exec blueman-manager
 bindsym $sup+p exec 1password
 
 # i3lock m/ bakgrunnsbilde
-bindsym $sup+l exec i3lock -e -i $HOME/.config/i3/background/irongiant_lock.png
+bindsym $sup+l exec i3lock -e -i ~/git/dotfiles/.config/i3/background/irongiant_lock.png
 
 # FLAMESHOT
 bindsym $sup+shift+s exec --no-startup-id  flameshot gui -s -c
@@ -212,12 +208,9 @@ exec --no-startup-id blueman-applet
 exec --no-startup-id nm-applet
 
 
-
 # TESTING
 
 # airblader dotfiles l: 178
-
-
 
 bindsym $mod+p exec --no-startup-id ~/.screenlayout/pc_only.sh
 bindsym $mod+g exec --no-startup-id ~/.screenlayout/gjemmekontor.sh

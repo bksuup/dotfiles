@@ -1,3 +1,4 @@
-# alacritty config
+# Font
 
-[env]
+[font]
+size = 10.0
