@@ -110,7 +110,8 @@ bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 bindsym $mod+Tab workspace back_and_forth
 
-workspace_auto_back_and_forth yes
+# Slightly annoying
+# workspace_auto_back_and_forth yes
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -172,6 +173,7 @@ bindsym $sup+w exec firefox
 bindsym $sup+e exec nautilus
 # bindsym $sup+d exec discord
 bindsym $sup+d exec --no-startup-id flatpak run com.discordapp.Discord
+bindsym $sup+t exec --no-startup-id flatpak run com.github.IsmaelMartinez.teams_for_linux
 bindsym $sup+s exec spotify
 bindsym $sup+o exec obsidian
 bindsym $sup+c exec code
