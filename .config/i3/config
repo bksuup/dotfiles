@@ -130,7 +130,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec --no-startup-id "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -158,6 +158,23 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+mode "power" {
+	# For functions like: shutdown, restart etc...
+
+	bindsym r mode "default", exec --no-startup-id $HOME/git/dotfiles/bin/power.sh reboot
+	bindsym p mode "default", exec --no-startup-id $HOME/git/dotfiles/bin/power.sh shutdown
+	bindsym s mode "default", exec --no-startup-id $HOME/git/dotfiles/bin/power.sh suspend
+
+# funker ikke helt enda, må lage swap file
+#	bindsym h mode "default", exec --no-startup-id $HOME/git/dotfiles/bin/power.sh hibernate
+
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+	bindsym $mod+p mode "default"
+}
+
+bindsym $mod+p mode "power"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -214,5 +231,5 @@ exec --no-startup-id nm-applet
 
 # airblader dotfiles l: 178
 
-bindsym $mod+p exec --no-startup-id ~/.screenlayout/pc_only.sh
+bindsym $mod+Ctrl+p exec --no-startup-id ~/.screenlayout/pc_only.sh
 bindsym $mod+g exec --no-startup-id ~/.screenlayout/gjemmekontor.sh
