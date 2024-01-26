@@ -3,11 +3,14 @@
 # lager symlinks for dotfiles
 
 # bash
-ln -s -f /home/$USER/git/dotfiles/bash/.bashrc /home/$USER/
-ln -s -f /home/$USER/git/dotfiles/bash/.bash_aliases /home/$USER/
+ln -s -f /home/$USER/git/dotfiles/.bashrc /home/$USER/
+ln -s -f /home/$USER/git/dotfiles/.bash_aliases /home/$USER/
 
 # Vim
 ln -s -f /home/$USER/git/dotfiles/.vimrc /home/$USER/
+
+# git
+ln -s -f /home/$USER/git/dotfiles/.gitconfig /home/$USER/
 
 # .config
 ln -s -f /home/$USER/git/dotfiles/.config/alacritty/alacritty.toml /home/$USER/.config/alacritty/

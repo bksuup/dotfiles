@@ -1,0 +1,5 @@
+[alias]
+	logg = log --no-merges -1 HEAD
+[user]
+	email = bjorkst@stud.ntnu.no
+	name = Bjørn Kristian Strand

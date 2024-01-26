@@ -15,3 +15,5 @@ alias i3conf='vim ~/.config/i3/config'
 # Batcat
 alias md='batcat -l 'md''
 alias yaml='batcat -l 'YAML''
+
+alias fvim='vim $(fzf)'
