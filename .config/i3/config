@@ -188,16 +188,13 @@ default_border pixel 1
 # Egne keybinds
 bindsym $sup+w exec firefox
 bindsym $sup+e exec nautilus
-# bindsym $sup+d exec discord
 bindsym $sup+d exec --no-startup-id flatpak run com.discordapp.Discord
 bindsym $sup+t exec --no-startup-id flatpak run com.github.IsmaelMartinez.teams_for_linux
 bindsym $sup+s exec spotify
 bindsym $sup+o exec obsidian
 bindsym $sup+c exec code
-bindsym $sup+a exec arandr
 bindsym $sup+v exec virt-manager
 bindsym $sup+b exec blueman-manager
-bindsym $sup+p exec 1password
 
 # i3lock m/ bakgrunnsbilde
 bindsym $sup+l exec i3lock -e -i ~/git/dotfiles/.config/i3/background/irongiant_lock.png
@@ -216,20 +213,16 @@ for_window [class="SpeedCrunch"] floating enable, resize set 640 480
 
 
 # AUTOSTART
-exec --no-startup-id dex --autostart --environment i3
+exec_always --no-startup-id dex --autostart --environment i3
 
 # exec_always --no-startup-id feh --bg-fill $HOME/.config/i3/background/irongiant.webp
 exec_always --no-startup-id feh --bg-fill $HOME/Pictures/bakgrunn/guta.jpg
-exec --no-startup-id picom -b
-exec --no-startup-id dunst
+exec_always --no-startup-id picom -b
+exec_always --no-startup-id dunst
 
-exec --no-startup-id blueman-applet
-exec --no-startup-id nm-applet
+exec_always --no-startup-id blueman-applet
+exec_always --no-startup-id nm-applet
 
-
-# TESTING
-
-# airblader dotfiles l: 178
 
 bindsym $mod+p exec --no-startup-id ~/.screenlayout/pc_only.sh
 bindsym $mod+g exec --no-startup-id ~/.screenlayout/gjemmekontor.sh
