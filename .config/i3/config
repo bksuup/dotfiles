@@ -192,8 +192,6 @@ bindsym $sup+d exec --no-startup-id flatpak run com.discordapp.Discord
 bindsym $sup+t exec --no-startup-id flatpak run com.github.IsmaelMartinez.teams_for_linux
 bindsym $sup+s exec spotify
 bindsym $sup+o exec obsidian
-bindsym $sup+c exec code
-bindsym $sup+v exec virt-manager
 bindsym $sup+b exec blueman-manager
 
 # i3lock m/ bakgrunnsbilde
@@ -224,5 +222,5 @@ exec_always --no-startup-id blueman-applet
 exec_always --no-startup-id nm-applet
 
 
-bindsym $mod+p exec --no-startup-id ~/.screenlayout/pc_only.sh
-bindsym $mod+g exec --no-startup-id ~/.screenlayout/gjemmekontor.sh
+bindsym $mod+Shift+p exec --no-startup-id ~/.screenlayout/pc_only.sh
+bindsym $mod+Shift+g exec --no-startup-id ~/.screenlayout/gjemmekontor.sh
