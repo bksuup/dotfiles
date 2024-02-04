@@ -6,6 +6,10 @@
 ln -s -f /home/$USER/git/dotfiles/.bashrc /home/$USER/
 ln -s -f /home/$USER/git/dotfiles/.bash_aliases /home/$USER/
 
+# ZSH
+ln -s -f /home/$USER/git/dotfiles/.zshrc /home/$USER/
+ln -s -f /home/$USER/git/dotfiles/.zsh_aliases /home/$USER/
+
 # Vim
 ln -s -f /home/$USER/git/dotfiles/.vimrc /home/$USER/
 

@@ -168,7 +168,7 @@ mode "power" {
 	bindsym s mode "default", exec --no-startup-id $HOME/git/dotfiles/bin/power.sh suspend
 
 # funker ikke helt enda, må lage swap file
-#	bindsym h mode "default", exec --no-startup-id $HOME/git/dotfiles/bin/power.sh hibernate
+	bindsym h mode "default", exec --no-startup-id $HOME/git/dotfiles/bin/power.sh hibernate
 
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
