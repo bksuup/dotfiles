@@ -195,7 +195,3 @@ bindsym $mod+Shift+g exec --no-startup-id ~/.screenlayout/gjemmekontor.sh
 # Change kblayout
 bindsym $mod+comma exec setxkbmap no
 bindsym $mod+period exec setxkbmap us
-
-# GAPS
-gaps outer 0
-gaps inner 10
