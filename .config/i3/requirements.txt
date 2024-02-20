@@ -1,5 +1,0 @@
-arandr - Display GUI
-flameshot - screenshot
-speedcrunch - kalkulator app
-picom - transparent vindu
-feh - bakgrunn

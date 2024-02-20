@@ -25,8 +25,6 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-# bindsym $mod+Return exec i3-sensible-terminal
-# bindsym $mod+Return exec --no-startup-id alacritty
 bindsym $mod+Return exec --no-startup-id terminator
 
 # kill focused window
@@ -41,23 +39,11 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
-
 # move focused window
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
-
-# alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
 bindsym $mod+c split h
@@ -111,9 +97,6 @@ bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 bindsym $mod+Tab workspace back_and_forth
 
-# Slightly annoying
-# workspace_auto_back_and_forth yes
-
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
@@ -146,12 +129,6 @@ mode "resize" {
         bindsym k resize shrink height 10 px or 10 ppt
         bindsym l resize grow width 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
-
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"
@@ -166,9 +143,6 @@ mode "power" {
 	bindsym r mode "default", exec --no-startup-id $HOME/git/dotfiles/bin/power.sh reboot
 	bindsym p mode "default", exec --no-startup-id $HOME/git/dotfiles/bin/power.sh shutdown
 	bindsym s mode "default", exec --no-startup-id $HOME/git/dotfiles/bin/power.sh suspend
-
-# funker ikke helt enda, må lage swap file
-	bindsym h mode "default", exec --no-startup-id $HOME/git/dotfiles/bin/power.sh hibernate
 
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
@@ -190,22 +164,14 @@ bindsym $sup+w exec firefox
 bindsym $sup+e exec nautilus
 bindsym $sup+d exec --no-startup-id flatpak run com.discordapp.Discord
 bindsym $sup+t exec --no-startup-id flatpak run com.github.IsmaelMartinez.teams_for_linux
-bindsym $sup+s exec spotify
-bindsym $sup+o exec obsidian
-bindsym $sup+b exec blueman-manager
-
 bindsym $sup+f exec --no-startup-id $HOME/apps/focalboard-app/focalboard-app
-
-# i3lock m/ bakgrunnsbilde
-bindsym $sup+l exec i3lock -e -i ~/git/dotfiles/.config/i3/background/irongiant_lock.png
 
 # FLAMESHOT
 bindsym $sup+shift+s exec --no-startup-id  flameshot gui -s -c
 bindsym $sup+Shift+f exec --no-startup-id flameshot screen -c -p /home/$USER/Pictures/Screenshots
 
-# lukke dunst notifications i guess, vente å se om æ har bruk for det i guess
-# bindsym $mod+Control+space exec --no-startup-id dunstctl close
-# bindsym $mod+Control+Shift+space exec --no-startup-id dunstctl close-all
+# i3lock m/ bakgrunnsbilde
+bindsym $sup+l exec i3lock -e -i ~/git/dotfiles/.config/i3/background/irongiant_lock.png
 
 # kalkulator app m/ speedcrunch
 bindsym XF86Calculator exec --no-startup-id speedcrunch
@@ -219,10 +185,17 @@ exec_always --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id feh --bg-fill $HOME/Pictures/bakgrunn/guta.jpg
 exec_always --no-startup-id picom -b
 exec_always --no-startup-id dunst
-
 exec_always --no-startup-id blueman-applet
 exec_always --no-startup-id nm-applet
 
-
+# Screen, skal byttes ut med autorandr
 bindsym $mod+Shift+p exec --no-startup-id ~/.screenlayout/pc_only.sh
 bindsym $mod+Shift+g exec --no-startup-id ~/.screenlayout/gjemmekontor.sh
+
+# Change kblayout
+bindsym $mod+comma exec setxkbmap no
+bindsym $mod+period exec setxkbmap us
+
+# GAPS
+gaps outer 0
+gaps inner 10
