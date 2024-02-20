@@ -194,12 +194,14 @@ bindsym $sup+s exec spotify
 bindsym $sup+o exec obsidian
 bindsym $sup+b exec blueman-manager
 
+bindsym $sup+f exec --no-startup-id $HOME/apps/focalboard-app/focalboard-app
+
 # i3lock m/ bakgrunnsbilde
 bindsym $sup+l exec i3lock -e -i ~/git/dotfiles/.config/i3/background/irongiant_lock.png
 
 # FLAMESHOT
 bindsym $sup+shift+s exec --no-startup-id  flameshot gui -s -c
-bindsym $sup+f exec --no-startup-id flameshot screen -c -p /home/$USER/Pictures/Screenshots
+bindsym $sup+Shift+f exec --no-startup-id flameshot screen -c -p /home/$USER/Pictures/Screenshots
 
 # lukke dunst notifications i guess, vente å se om æ har bruk for det i guess
 # bindsym $mod+Control+space exec --no-startup-id dunstctl close
