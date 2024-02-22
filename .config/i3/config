@@ -195,7 +195,7 @@ exec_always --no-startup-id dex --autostart --environment i3
 
 # exec_always --no-startup-id feh --bg-fill $HOME/.config/i3/background/irongiant.webp
 # exec_always --no-startup-id feh --bg-fill $HOME/Pictures/bakgrunn/guta.jpg
-exec_always --no-startup-id feh --bg-fill $HOME/git/dotfiles/.config/i3/background/pog.png
+exec_always --no-startup-id feh --bg-fill $HOME/git/dotfiles/.config/i3/background/nasa.webp
 exec_always --no-startup-id picom -b
 exec_always --no-startup-id dunst
 exec_always --no-startup-id blueman-applet
