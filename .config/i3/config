@@ -24,8 +24,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Brightnessctl
 # For å bruke brightnessctl uten sudo
 # sudo chmod +s $(which brightnessctl)
-bindsym XF86MonBrightnessUp   exec --no-startup-id brightnessctl --min-value=1 --exponent=4 set +7%
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl --min-value=1 --exponent=4 set 7%-
+bindsym XF86MonBrightnessUp   exec --no-startup-id brightnessctl --min-value=1 set +7%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl --min-value=1 set 7%-
 
 # PLAYERCTL
 bindsym $sup+Right  exec --no-startup-id playerctl next
