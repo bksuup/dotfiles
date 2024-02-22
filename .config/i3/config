@@ -21,6 +21,18 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
+# Brightnessctl
+# For å bruke brightnessctl uten sudo
+# sudo chmod +s $(which brightnessctl)
+bindsym XF86MonBrightnessUp   exec --no-startup-id brightnessctl --min-value=1 --exponent=4 set +7%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl --min-value=1 --exponent=4 set 7%-
+
+# PLAYERCTL
+bindsym $sup+Right  exec --no-startup-id playerctl next
+bindsym $sup+Left   exec --no-startup-id playerctl previous
+bindsym $sup+Return exec --no-startup-id playerctl play-pause
+
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -182,11 +194,14 @@ for_window [class="SpeedCrunch"] floating enable, resize set 640 480
 exec_always --no-startup-id dex --autostart --environment i3
 
 # exec_always --no-startup-id feh --bg-fill $HOME/.config/i3/background/irongiant.webp
-exec_always --no-startup-id feh --bg-fill $HOME/Pictures/bakgrunn/guta.jpg
+# exec_always --no-startup-id feh --bg-fill $HOME/Pictures/bakgrunn/guta.jpg
+exec_always --no-startup-id feh --bg-fill $HOME/git/dotfiles/.config/i3/background/pog.png
 exec_always --no-startup-id picom -b
 exec_always --no-startup-id dunst
 exec_always --no-startup-id blueman-applet
 exec_always --no-startup-id nm-applet
+exec_always --no-startup-id autorandr -c
+
 
 # Screen, skal byttes ut med autorandr
 bindsym $mod+Shift+p exec --no-startup-id ~/.screenlayout/pc_only.sh
@@ -196,5 +211,9 @@ bindsym $mod+Shift+g exec --no-startup-id ~/.screenlayout/gjemmekontor.sh
 bindsym $mod+comma exec setxkbmap no
 bindsym $mod+period exec setxkbmap us
 
-# gaps inner 10
-# gaps outer 0
+# Gaps
+gaps inner 10
+gaps outer 0
+
+# Bytt esc og caps
+exec_always --no-startup-id setxkbmap -option caps:swapescape

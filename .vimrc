@@ -8,6 +8,7 @@ colorscheme peachpuff
 
 set tabstop=2
 set shiftwidth=4
+set expandtab	
 
 set ignorecase
 set smartcase
@@ -15,3 +16,5 @@ set smartcase
 set scrolloff=8
 
 set showmode
+
+set autochdir
