@@ -19,6 +19,4 @@ alias csv='batcat -l 'csv''
 
 alias fvim='vim $(fzf)'
 
-alias kub='ssh ubuntu@10.212.169.122'
-
 alias ..='cd ..'
