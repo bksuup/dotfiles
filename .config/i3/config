@@ -185,27 +185,17 @@ bindsym $sup+Shift+f exec --no-startup-id flameshot screen -c -p /home/$USER/Pic
 # i3lock m/ bakgrunnsbilde
 bindsym $sup+l exec i3lock -e -i ~/git/dotfiles/.config/i3/background/irongiant_lock.png
 
-# kalkulator app m/ speedcrunch
-bindsym XF86Calculator exec --no-startup-id speedcrunch
-for_window [class="SpeedCrunch"] floating enable, resize set 640 480
-
-
 # AUTOSTART
 exec_always --no-startup-id dex --autostart --environment i3
 
 # exec_always --no-startup-id feh --bg-fill $HOME/.config/i3/background/irongiant.webp
 # exec_always --no-startup-id feh --bg-fill $HOME/Pictures/bakgrunn/guta.jpg
-exec_always --no-startup-id feh --bg-fill $HOME/git/dotfiles/.config/i3/background/nasa.webp
-exec_always --no-startup-id picom -b
+exec_always --no-startup-id feh --bg-fill $HOME/git/dotfiles/.config/i3/background/test.jpg
+exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 exec_always --no-startup-id dunst
 exec_always --no-startup-id blueman-applet
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id autorandr -c
-
-
-# Screen, skal byttes ut med autorandr
-bindsym $mod+Shift+p exec --no-startup-id ~/.screenlayout/pc_only.sh
-bindsym $mod+Shift+g exec --no-startup-id ~/.screenlayout/gjemmekontor.sh
 
 # Change kblayout
 bindsym $mod+comma exec setxkbmap no
