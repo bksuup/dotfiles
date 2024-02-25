@@ -60,6 +60,5 @@ if ! shopt -oq posix; then
   fi
 fi
 
-. "$HOME/.cargo/env"
 
 PS1='\e[0;36m[\u \w]$ \[\e[m\]'

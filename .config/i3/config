@@ -176,7 +176,7 @@ bindsym $sup+w exec firefox
 bindsym $sup+e exec nautilus
 bindsym $sup+d exec --no-startup-id flatpak run com.discordapp.Discord
 bindsym $sup+t exec --no-startup-id flatpak run com.github.IsmaelMartinez.teams_for_linux
-bindsym $sup+f exec --no-startup-id $HOME/apps/focalboard-app/focalboard-app
+bindsym $sup+s exec --no-startup-id flatpak run com.spotify.Client
 
 # FLAMESHOT
 bindsym $sup+shift+s exec --no-startup-id  flameshot gui -s -c

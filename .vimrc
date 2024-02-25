@@ -4,7 +4,6 @@ set relativenumber
 filetype on
 syntax on
 
-colorscheme peachpuff
 
 set tabstop=2
 set shiftwidth=4
