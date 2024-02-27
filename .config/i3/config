@@ -1,4 +1,4 @@
-# Todolist:
+# i3 Config
 
 # set mod key == alt
 set $mod Mod1
@@ -42,10 +42,10 @@ bindsym $mod+Return exec --no-startup-id alacritty
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start dmenu-desktop (a program launcher)
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+# Rofi
 bindsym $mod+d exec --no-startup-id rofi -show drun
-
+bindsym XF86Calculator exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort
+bindsym $mod+Ctrl+Tab exec --no-startup-id rofi -show window
 
 # change focus
 bindsym $mod+h focus left
@@ -176,7 +176,7 @@ default_border pixel 1
 
 # Egne keybinds
 bindsym $sup+w exec --no-startup-id firefox
-bindsym $sup+e exec nautilus
+bindsym $sup+e exec --no-startup-id nautilus
 bindsym $sup+d exec --no-startup-id flatpak run com.discordapp.Discord
 bindsym $sup+s exec --no-startup-id flatpak run com.spotify.Client
 

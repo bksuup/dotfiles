@@ -2,7 +2,7 @@ configuration {
   display-drun: "Applications:";
   display-window: "Windows:";
   drun-display-format: "{icon} {name}";
-  font: "Fira Code 12";
+  font: "Fira Code 20";
   modi: "window,run,drun";
   show-icons: true;
   icon-theme: "Papirus";
@@ -37,12 +37,12 @@ window {
     background-color:   @bg0;
 
     location:       center;
-    width:          640;
+    width:          880;
     border-radius:  8;
 }
 
 inputbar {
-    font:       "Fira Code 12";
+    font:       "Fira Code 20";
     padding:    12px;
     spacing:    12px;
     children:   [ icon-search, entry ];
