@@ -176,7 +176,6 @@ default_border pixel 1
 bindsym $sup+w exec firefox
 bindsym $sup+e exec nautilus
 bindsym $sup+d exec --no-startup-id flatpak run com.discordapp.Discord
-bindsym $sup+t exec --no-startup-id flatpak run com.github.IsmaelMartinez.teams_for_linux
 bindsym $sup+s exec --no-startup-id flatpak run com.spotify.Client
 
 # FLAMESHOT
