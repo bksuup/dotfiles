@@ -173,7 +173,7 @@ bar {
 default_border pixel 1
 
 # Egne keybinds
-bindsym $sup+w exec firefox
+bindsym $sup+w exec --no-startup-id firefox
 bindsym $sup+e exec nautilus
 bindsym $sup+d exec --no-startup-id flatpak run com.discordapp.Discord
 bindsym $sup+s exec --no-startup-id flatpak run com.spotify.Client

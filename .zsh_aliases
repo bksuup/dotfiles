@@ -12,9 +12,9 @@ alias ll='ls -lA --group-directories-first'
 alias i3conf='vim ~/.config/i3/config'
 
 # Batcat
-alias md='batcat -l 'md''
-alias yaml='batcat -l 'YAML''
-alias csv='batcat -l 'csv''
+alias md='bat -l 'md''
+alias yaml='bat -l 'YAML''
+alias csv='bat -l 'csv''
 
 alias fvim='vim $(fzf)'
 

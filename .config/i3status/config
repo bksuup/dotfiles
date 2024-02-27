@@ -32,7 +32,7 @@ ethernet _first_ {
 }
 
 battery all {
-        format = "%status %percentage"
+  format = "%status %percentage"
 	last_full_capacity = true
 	integer_battery_capacity = true
 	status_chr = "⚡"
@@ -62,5 +62,6 @@ tztime local {
 volume master {
         format = "♪: %volume"
         format_muted = "♪:(%volume)"
-        device = "pulse:1"
+        device = "default"
+        mixer = "Master"
 }
