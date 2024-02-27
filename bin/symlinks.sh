@@ -24,3 +24,4 @@ ln -s -f /home/$USER/git/dotfiles/.config/i3status/config /home/$USER/.config/i3
 ln -s -f /home/$USER/git/dotfiles/.config/terminator/config /home/$USER/.config/terminator/
 ln -s -f /home/$USER/git/dotfiles/.config/dunst/dunstrc /home/$USER/.config/dunst
 ln -s -f /home/$USER/git/dotfiles/.config/picom/picom.conf /home/$USER/.config/picom
+ln -s -f /home/$USER/git/dotfiles/.config/rofi/config.rasi /home/$USER/.config/rofi
