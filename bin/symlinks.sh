@@ -2,6 +2,10 @@
 
 # lager symlinks for dotfiles
 
+# .local/bin
+ln -s -f /home/$USER/git/dotfiles/bin/power.sh /home/$USER/.local/bin/power
+ln -s -f /home/$USER/git/dotfiles/bin/backlight.sh /home/$USER/.local/bin/backlight
+
 # bash
 ln -s -f /home/$USER/git/dotfiles/.bashrc /home/$USER/
 ln -s -f /home/$USER/git/dotfiles/.bash_aliases /home/$USER/

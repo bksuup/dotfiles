@@ -26,6 +26,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # sudo chmod +s $(which brightnessctl)
 bindsym XF86MonBrightnessUp   exec --no-startup-id brightnessctl --min-value=1 set +7%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl --min-value=1 set 7%-
+bindsym $sup+p exec --no-startup-id ~/.local/bin/backlight
 
 # PLAYERCTL
 bindsym $sup+Right  exec --no-startup-id playerctl next
@@ -178,7 +179,7 @@ default_border pixel 1
 bindsym $sup+w exec --no-startup-id firefox
 bindsym $sup+e exec --no-startup-id nautilus
 bindsym $sup+d exec --no-startup-id flatpak run com.discordapp.Discord
-bindsym $sup+s exec --no-startup-id flatpak run com.spotify.Client
+bindsym $sup+t exec --no-startup-id flatpak run com.github.IsmaelMartinez.teams_for_linux
 
 # FLAMESHOT
 bindsym $sup+shift+s exec --no-startup-id  flameshot gui -s -c
