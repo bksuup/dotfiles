@@ -199,6 +199,7 @@ exec_always --no-startup-id dunst
 exec_always --no-startup-id blueman-applet
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id autorandr -c
+exec_always --no-startup-id setxkbmap -option caps:swapescape
 
 # Change kblayout
 bindsym $mod+comma exec setxkbmap no
@@ -207,6 +208,3 @@ bindsym $mod+period exec setxkbmap us
 # Gaps
 gaps inner 10
 gaps outer 0
-
-# Bytt esc og caps
-exec_always --no-startup-id setxkbmap -option caps:swapescape

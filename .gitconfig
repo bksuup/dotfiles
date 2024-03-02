@@ -3,3 +3,5 @@
 [user]
 	email = bjorkst@stud.ntnu.no
 	name = Bjørn Kristian Strand
+[pull]
+	rebase = true
