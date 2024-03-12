@@ -3,16 +3,23 @@
 # lager symlinks for dotfiles
 
 # .local/bin
-ln -s -f /home/$USER/git/dotfiles/bin/power.sh /home/$USER/.local/bin/power
-ln -s -f /home/$USER/git/dotfiles/bin/backlight.sh /home/$USER/.local/bin/backlight
+ln -s -f /home/$USER/git/dotfiles/.local/bin/power.sh /home/$USER/.local/bin/power
+ln -s -f /home/$USER/git/dotfiles/.local/bin/backlight.sh /home/$USER/.local/bin/backlight
+ln -s -f /home/$USER/git/dotfiles/.local/bin/tmux-cht.sh /home/$USER/.local/bin/
+ln -s -f /home/$USER/git/dotfiles/.local/bin/tmux-sessionizer /home/$USER/.local/bin/
 
 # bash
-ln -s -f /home/$USER/git/dotfiles/.bashrc /home/$USER/
-ln -s -f /home/$USER/git/dotfiles/.bash_aliases /home/$USER/
+# ln -s -f /home/$USER/git/dotfiles/.bashrc /home/$USER/
+# ln -s -f /home/$USER/git/dotfiles/.bash_aliases /home/$USER/
 
 # ZSH
 ln -s -f /home/$USER/git/dotfiles/.zshrc /home/$USER/
 ln -s -f /home/$USER/git/dotfiles/.zsh_aliases /home/$USER/
+
+# ZSH
+ln -s -f /home/$USER/git/dotfiles/.tmux.conf /home/$USER/
+ln -s -f /home/$USER/git/dotfiles/.tmux-cht-command /home/$USER/
+ln -s -f /home/$USER/git/dotfiles/.tmux-cht-languages /home/$USER/
 
 # Vim
 ln -s -f /home/$USER/git/dotfiles/.vimrc /home/$USER/
