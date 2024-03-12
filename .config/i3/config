@@ -155,9 +155,9 @@ bindsym $mod+r mode "resize"
 mode "power" {
 	# For functions like: shutdown, restart etc...
 
-	bindsym r mode "default", exec --no-startup-id $HOME/git/dotfiles/bin/power.sh reboot
-	bindsym p mode "default", exec --no-startup-id $HOME/git/dotfiles/bin/power.sh shutdown
-	bindsym s mode "default", exec --no-startup-id $HOME/git/dotfiles/bin/power.sh suspend
+	bindsym r mode "default", exec --no-startup-id $HOME/git/dotfiles/.local/bin/power.sh reboot
+	bindsym p mode "default", exec --no-startup-id $HOME/git/dotfiles/.local/bin/power.sh shutdown
+	bindsym s mode "default", exec --no-startup-id $HOME/git/dotfiles/.local/bin/power.sh suspend
 
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
