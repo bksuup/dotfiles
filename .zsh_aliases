@@ -6,7 +6,8 @@ alias cp="cp -i"			# confirm before overwrite
 alias df='df -h'                        # human-readable sizes
 alias free='free -m'                    # show sizes in MB
 
-alias ll='ls -lA --group-directories-first'
+alias ll='ls -l --group-directories-first'
+alias la='ls -lA --group-directories-first'
 
 ## i3 spesific
 alias i3conf='vim ~/.config/i3/config'
@@ -18,7 +19,7 @@ alias csv='bat -l 'csv''
 
 alias ..='cd ..'
 
-alias jb='ssh ubuntu@10.212.175.186'
+alias jb='ssh ubuntu@10.212.170.255'
 
 
 # Temp alias til æ orke finne ut av TMUX
@@ -26,3 +27,5 @@ alias bas='cd ~/git/bachelor/k8s-applications/clusters/bastion'
 alias bac='cd ~/git/second_brain/1_Projects/BachelorOppgave'
 
 alias vim='nvim'
+
+alias kd='pkill Discord'
