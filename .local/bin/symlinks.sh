@@ -7,6 +7,7 @@ ln -s -f /home/$USER/git/dotfiles/.local/bin/power.sh /home/$USER/.local/bin/pow
 ln -s -f /home/$USER/git/dotfiles/.local/bin/backlight.sh /home/$USER/.local/bin/backlight
 ln -s -f /home/$USER/git/dotfiles/.local/bin/tmux-cht.sh /home/$USER/.local/bin/
 ln -s -f /home/$USER/git/dotfiles/.local/bin/tmux-sessionizer /home/$USER/.local/bin/
+ln -s -f /home/$USER/git/dotfiles/.local/bin/lock.sh /home/$USER/.local/bin/lock
 
 # bash
 # ln -s -f /home/$USER/git/dotfiles/.bashrc /home/$USER/
@@ -16,10 +17,10 @@ ln -s -f /home/$USER/git/dotfiles/.local/bin/tmux-sessionizer /home/$USER/.local
 ln -s -f /home/$USER/git/dotfiles/.zshrc /home/$USER/
 ln -s -f /home/$USER/git/dotfiles/.zsh_aliases /home/$USER/
 
-# ZSH
-ln -s -f /home/$USER/git/dotfiles/.tmux.conf /home/$USER/
-ln -s -f /home/$USER/git/dotfiles/.tmux-cht-command /home/$USER/
-ln -s -f /home/$USER/git/dotfiles/.tmux-cht-languages /home/$USER/
+# Tmux
+ln -s -f /home/$USER/git/dotfiles/.config/tmux/tmux.conf /home/$USER/.config/tmux/
+ln -s -f /home/$USER/git/dotfiles/.config/tmux/.tmux-cht-command /home/$USER/
+ln -s -f /home/$USER/git/dotfiles/.config/tmux/.tmux-cht-languages /home/$USER/
 
 # Vim
 ln -s -f /home/$USER/git/dotfiles/.vimrc /home/$USER/

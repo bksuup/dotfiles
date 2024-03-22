@@ -6,3 +6,5 @@
 	name = Bjørn Kristian Strand
 [pull]
 	rebase = true
+[core]
+	editor = nvim
