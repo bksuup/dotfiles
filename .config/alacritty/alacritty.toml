@@ -5,7 +5,7 @@
 # Alacritty themes
 
 import = [
-  "~/git/dotfiles/.config/alacritty/catppuccin-frappe.toml"
+#  "~/git/dotfiles/.config/alacritty/catppuccin-frappe.toml"
 #  "~/git/dotfiles/.config/alacritty/rose-pine.toml"
 ]
 
