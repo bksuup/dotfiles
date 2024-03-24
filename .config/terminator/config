@@ -1,6 +1,6 @@
 [global_config]
   window_state = maximise
-  borderless = False
+  borderless = True
   extra_styling = False
 [keybindings]
 [profiles]

@@ -38,7 +38,8 @@ bindsym $sup+Return exec --no-startup-id playerctl play-pause
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id alacritty
+# bindsym $mod+Return exec --no-startup-id alacritty
+bindsym $mod+Return exec --no-startup-id terminator
 
 # kill focused window
 bindsym $mod+Shift+q kill
