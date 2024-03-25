@@ -17,15 +17,8 @@ alias md='bat -l 'md''
 alias yaml='bat -l 'YAML''
 alias csv='bat -l 'csv''
 
-alias ..='cd ..'
-
 alias jb='ssh ubuntu@10.212.170.255'
-
-
-# Temp alias til æ orke finne ut av TMUX
-alias bas='cd ~/git/bachelor/k8s-applications/clusters/bastion'
-alias bac='cd ~/git/second_brain/1_Projects/BachelorOppgave'
 
 alias vim='nvim'
 
-alias kd='pkill Discord'
+alias tm='tmux'
