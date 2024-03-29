@@ -1,7 +1,10 @@
 # README NVIM Config
 
-## Todo:
+## Dependencies
+- NPM
+- git
+- ripgrep
 
-- [ ] Treesitter config, what does it do?
-- [ ] Harpoon, what it do?
-- [ ] LSP
+## Frankensteined from:
+[MathiasWS](https://gitlab.com/mathias_ws/nvim)
+[ThePrimeagen](https://github.com/ThePrimeagen/neovimrc)

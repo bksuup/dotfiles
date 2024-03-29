@@ -1,3 +1,5 @@
+--[ Mostly stolen from https://github.com/mathias-ws/nvim and https://github.com/ThePrimeagen/neovimrc --]
+
 return {
     "VonHeikemen/lsp-zero.nvim",
 
@@ -40,17 +42,45 @@ return {
             update_on_delete = true,
         })
 
+
         mason_lspconfig.setup({
             ensure_installed = {
                 "lua_ls",
+                "perlnavigator",
+                "pyright",
+                "yamlls",
+                "bashls",
             }
         })
 
+
         mason_tool_installer.setup({
-            "markdownlint",
+            ensure_installed = {
+                "markdownlint",
+                "yamllint",
+            }
         })
 
         require("lspconfig").lua_ls.setup(lsp.nvim_lua_ls())
+        require("lspconfig").perlnavigator.setup({})
+        require("lspconfig").bashls.setup({})
+
+        require("lspconfig").pyright.setup({
+            filetypes = { "python" },
+        })
+
+        require("lspconfig").yamlls.setup({
+            settings = {
+                yaml = {
+                    format = {
+                        enable = false,
+                    },
+                    validate = true,
+                    completion = true,
+                    hover = true,
+                },
+            },
+        })
 
     end
 }

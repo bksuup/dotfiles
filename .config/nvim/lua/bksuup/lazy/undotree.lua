@@ -1,13 +1,13 @@
 return {
-  "mbbill/undotree",
+    "mbbill/undotree",
 
-  event = {
-    "BufReadPre",
-    "BufNewFile",
-  },
+    event = {
+        "BufReadPre",
+        "BufNewFile",
+    },
 
-  keys = {
-    { "<leader>u", vim.cmd.UndotreeToggle, desc = "Toggle undotree." },
-  },
+    keys = {
+        { "<leader>u", vim.cmd.UndotreeToggle, desc = "Toggle undotree." },
+    },
 }
 

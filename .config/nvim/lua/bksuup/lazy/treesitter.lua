@@ -1,13 +1,56 @@
 return {
-	"nvim-treesitter/nvim-treesitter",
-	build = ":TSUpdate",
-	config = function()
-		local configs = require("nvim-treesitter.configs")
-		configs.setup({
-			ensure_installed = { "c", "rust", "lua", "vimdoc", "bash" },
-			sync_install = false,
-			highlight = { enable = true },
-			indent = { enable = true },
-		})
-	end
+    "nvim-treesitter/nvim-treesitter",
+
+    event = {
+        "BufReadPre",
+        "BufNewFile",
+    },
+
+    build = ":TSUpdate",
+
+    config = function()
+        require("nvim-treesitter.configs").setup({
+            ensure_installed = {
+                "c",
+                "lua",
+                "vim",
+                "vimdoc",
+                "javascript",
+                "typescript",
+                "bash",
+                "go",
+                "gomod",
+                "gowork",
+                "gosum",
+                "python",
+                "toml",
+                "sql",
+                "yaml",
+                "json",
+                "terraform",
+                "dockerfile",
+                "gitignore",
+                "git_config",
+                "gitcommit",
+                "hcl",
+                "html",
+                "latex",
+                "markdown",
+                "markdown_inline",
+                "regex",
+                "requirements",
+                "sql",
+                "toml",
+                "csv",
+                "diff",
+            },
+            sync_install = false,
+            auto_install = true,
+            highlight = {
+                enable = true,
+                additional_vim_regex_highlighting = false,
+            },
+        })
+    end,
 }
+
