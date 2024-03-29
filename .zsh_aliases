@@ -6,19 +6,18 @@ alias cp="cp -i"			# confirm before overwrite
 alias df='df -h'                        # human-readable sizes
 alias free='free -m'                    # show sizes in MB
 
+## List
 alias ll='ls -l --group-directories-first'
 alias la='ls -lA --group-directories-first'
 
 ## i3 spesific
 alias i3conf='vim ~/.config/i3/config'
 
-# Batcat
+## Batcat
 alias md='bat -l 'md''
 alias yaml='bat -l 'YAML''
 alias csv='bat -l 'csv''
 
-alias jb='ssh ubuntu@10.212.170.255'
-
+## Dev
 alias vim='nvim'
-
 alias tm='tmux'
