@@ -192,8 +192,6 @@ bindsym $sup+l exec i3lock -e -i ~/git/dotfiles/.config/i3/background/firewatch.
 # AUTOSTART
 exec_always --no-startup-id dex --autostart --environment i3
 
-# exec_always --no-startup-id feh --bg-fill $HOME/.config/i3/background/irongiant.webp
-# exec_always --no-startup-id feh --bg-fill $HOME/Pictures/bakgrunn/guta.jpg
 exec_always --no-startup-id feh --bg-fill $HOME/git/dotfiles/.config/i3/background/firewatch.png
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 exec_always --no-startup-id dunst
