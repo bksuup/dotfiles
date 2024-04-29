@@ -7,10 +7,10 @@
   [[default]]
     icon_bell = False
     background_color = "#181818"
-    background_darkness = 0.9
+    background_darkness = 0.85
     background_type = transparent
     background_image = None
-    font = Fira Code 16
+    font = FiraCode Nerd Font Mono 16
     foreground_color = "#d8d8d8"
     show_titlebar = False
     scrollbar_position = hidden

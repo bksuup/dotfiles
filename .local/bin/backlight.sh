@@ -6,6 +6,6 @@ if [ $CURRENTLEVEL = 2 ]; then
   brightnessctl --device='platform::kbd_backlight' set 0
   notify-send "Backlight" "Turned Off"
 elif [ $CURRENTLEVEL = 0 ]; then
-  brightnessctl --device='platform::kbd_backlight' set 2
+  brightnessctl --device='platform::kbd_backlight' set 1
   notify-send "Backlight" "Turned On"
 fi

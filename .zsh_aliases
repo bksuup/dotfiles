@@ -21,3 +21,7 @@ alias csv='bat -l 'csv''
 ## Dev
 alias vim='nvim'
 alias tm='tmux'
+
+## Docker
+alias dim='docker image ls'
+alias pwsh='docker run -it --rm -v ~/docker-volumes/powershell:/home/pwsh ubuntu-powershell:2.1'
