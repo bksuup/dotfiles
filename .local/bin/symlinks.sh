@@ -7,7 +7,6 @@ ln -s -f /home/$USER/git/dotfiles/.local/bin/power.sh /home/$USER/.local/bin/pow
 ln -s -f /home/$USER/git/dotfiles/.local/bin/backlight.sh /home/$USER/.local/bin/backlight
 ln -s -f /home/$USER/git/dotfiles/.local/bin/tmux-cht.sh /home/$USER/.local/bin/
 ln -s -f /home/$USER/git/dotfiles/.local/bin/tmux-sessionizer /home/$USER/.local/bin/
-ln -s -f /home/$USER/git/dotfiles/.local/bin/lock.sh /home/$USER/.local/bin/lock
 
 # bash
 # ln -s -f /home/$USER/git/dotfiles/.bashrc /home/$USER/
