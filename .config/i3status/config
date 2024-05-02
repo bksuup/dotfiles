@@ -12,13 +12,13 @@ general {
 }
 
 # order += "ipv6"
+# order += "disk /"
+# order += "memory"
+# order += "load"
 order += "wireless _first_"
 order += "ethernet _first_"
 order += "volume master"
 order += "battery all"
-# order += "disk /"
-# order += "load"
-# order += "memory"
 order += "tztime local"
 
 wireless _first_ {
@@ -53,7 +53,8 @@ memory {
 }
 
 tztime local {
-        format = "Uke: %V / %F / %a %H:%M"
+        # format = "Uke: %V / %F / %a %H:%M"
+        format = "Uke: %V / %a %d %b / %H:%M"
 	# man strftime
 }
 
