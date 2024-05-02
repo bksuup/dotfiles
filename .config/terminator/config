@@ -7,7 +7,7 @@
   [[default]]
     icon_bell = False
     background_color = "#181818"
-    background_darkness = 0.85
+    background_darkness = 0.95
     background_type = transparent
     background_image = None
     font = FiraCode Nerd Font Mono 16
