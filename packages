@@ -19,3 +19,5 @@ bluez-utils
 blueman
 npm
 ripgrep
+git
+xclip
