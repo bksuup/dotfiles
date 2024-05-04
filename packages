@@ -21,3 +21,5 @@ npm
 ripgrep
 git
 xclip
+man-db
+man-pages
