@@ -53,8 +53,8 @@ memory {
 }
 
 tztime local {
-        # format = "Uke: %V / %F / %a %H:%M"
-        format = "Uke: %V / %a %d %b / %H:%M"
+        format = "Uke: %V / %F / %a %H:%M"
+        # format = "Uke: %V / %a %d %b / %H:%M"
 	# man strftime
 }
 
