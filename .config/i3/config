@@ -8,7 +8,7 @@ set $sup Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:FiraCode Nerd Font Mono 12
+font pango:Fira Code Nerd Font Mono 12
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
@@ -38,8 +38,8 @@ bindsym $sup+Return exec --no-startup-id playerctl play-pause
 floating_modifier $mod
 
 # start a terminal
-# bindsym $mod+Return exec --no-startup-id alacritty
-bindsym $mod+Return exec --no-startup-id terminator
+# bindsym $mod+Return exec --no-startup-id terminator
+bindsym $mod+Return exec --no-startup-id alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -130,7 +130,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec --no-startup-id "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec --no-startup-id "i3-nagbar -f 'pango:Fira Code Nerd Font Mono 12' -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -159,6 +159,7 @@ mode "power" {
 	bindsym r mode "default", exec --no-startup-id $HOME/git/dotfiles/.local/bin/power.sh reboot
 	bindsym p mode "default", exec --no-startup-id $HOME/git/dotfiles/.local/bin/power.sh shutdown
 	bindsym s mode "default", exec --no-startup-id $HOME/git/dotfiles/.local/bin/power.sh suspend
+	bindsym h mode "default", exec --no-startup-id $HOME/git/dotfiles/.local/bin/power.sh hibernate
 
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
@@ -169,8 +170,9 @@ bindsym $mod+Ctrl+p mode "power"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        font pango: Fira Code 12
-        status_command i3status
+    tray_output primary    
+    font pango: Fira Code Nerd Font Mono 12
+    status_command i3status
 }
 
 # Fjerne titlebar
@@ -182,20 +184,22 @@ bindsym $sup+w exec --no-startup-id flatpak run com.brave.Browser
 bindsym $sup+e exec --no-startup-id nautilus
 bindsym $sup+d exec --no-startup-id flatpak run com.discordapp.Discord
 bindsym $sup+t exec --no-startup-id flatpak run com.github.IsmaelMartinez.teams_for_linux
+bindsym $sup+f exec --no-startup-id flatpak run io.gitlab.idevecore.Pomodoro 
 
 # FLAMESHOT
 bindsym $sup+shift+s exec --no-startup-id  flameshot gui -s -c
 bindsym $sup+Shift+f exec --no-startup-id flameshot screen -c -p /home/$USER/Pictures/Screenshots
 
 # i3lock m/ bakgrunnsbilde
-bindsym $sup+l exec i3lock -e -i ~/git/dotfiles/.config/i3/background/firewatch.png
+# bindsym $sup+l exec i3lock -e -i ~/git/dotfiles/.config/i3/background/firewatch.png
+bindsym $sup+l exec i3lock -e -c 000000
 
 # AUTOSTART
 exec_always --no-startup-id dex --autostart --environment i3
 
 # exec_always --no-startup-id feh --bg-fill $HOME/git/dotfiles/.config/i3/background/firewatch.png
-exec_always --no-startup-id feh --bg-fill $HOME/Downloads/009.png
-exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
+# exec_always --no-startup-id feh --bg-fill $HOME/Downloads/115h9yls3o271.webp
+# exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 exec_always --no-startup-id dunst
 exec_always --no-startup-id blueman-applet
 exec_always --no-startup-id nm-applet
@@ -207,5 +211,5 @@ bindsym $mod+comma exec setxkbmap no
 bindsym $mod+period exec setxkbmap us
 
 # Gaps
-gaps inner 10
-gaps outer 0
+gaps inner 4
+# gaps outer 0
