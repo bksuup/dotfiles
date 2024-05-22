@@ -83,4 +83,4 @@ fi
 
 # plugins
 source $ZSH/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
-export TERM=xterm-256color
+# export TERM=xterm-256color

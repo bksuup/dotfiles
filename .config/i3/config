@@ -213,3 +213,7 @@ bindsym $mod+period exec setxkbmap us
 # Gaps
 gaps inner 4
 # gaps outer 0
+
+# Scratchpad
+bindsym $mod+minus scratchpad show
+bindsym $mod+Shift+minus move scratchpad

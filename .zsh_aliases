@@ -7,7 +7,7 @@ alias df='df -h'                        # human-readable sizes
 alias free='free -m'                    # show sizes in MB
 
 ## List
-alias ll='ls -l --group-directories-first'
+alias l='ls -l --group-directories-first'
 alias la='ls -lA --group-directories-first'
 
 ## i3 spesific

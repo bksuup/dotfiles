@@ -14,7 +14,6 @@ shell = "/usr/bin/zsh"
 
 [window]
 decorations = "None"
-opacity = 0.95
 startup_mode = "Maximized"
 
 [scrolling]
