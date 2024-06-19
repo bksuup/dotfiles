@@ -9,6 +9,19 @@ script_dir=/home/bk/git/dotfiles/.config/i3blocks/scripts/
 markup=pango
 
 # Blocks
+
+[keyboard]
+command=$script_dir/keyboard.sh
+interval=once
+signal=11
+label=<span color="#8be9fd"> </span>
+border=#8be9fd
+border_top=1
+border_right=0
+border_bottom=0
+border_left=0
+
+
 [wifi]
 command=$script_dir/wifi.sh
 interval=10
