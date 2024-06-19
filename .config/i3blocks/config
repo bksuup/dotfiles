@@ -1,0 +1,75 @@
+# I3blocks config
+
+# Global properties
+align=center
+# color=#f5f5f5
+separator=false
+separator_block_width=15
+script_dir=/home/bk/git/dotfiles/.config/i3blocks/scripts/
+markup=pango
+
+# Blocks
+[wifi]
+command=$script_dir/wifi.sh
+interval=10
+label=<span color="#1793d1">󰖩 </span>
+border=#1793d1
+border_top=1
+border_right=0
+border_bottom=0
+border_left=0
+
+
+[battery]
+command=$script_dir/battery.sh
+interval=10
+label=<span color="#50fa7b">󰁹 </span>
+border=#50fa7b
+border_top=1
+border_right=0
+border_bottom=0
+border_left=0
+
+
+[audio]
+command=$script_dir/audio.sh
+interval=once
+signal=10
+border=#ff5555
+border_top=1
+border_right=0
+border_bottom=0
+border_left=0
+
+
+[week]
+command=$script_dir/week.sh
+interval=0
+label=Week: 
+border=#f1fa8c
+border_top=1
+border_right=0
+border_bottom=0
+border_left=0
+
+
+[date]
+command=$script_dir/date.sh
+interval=60
+label=<span color="#bd93f9">󰸘 </span>
+border=#bd93f9
+border_top=1
+border_right=0
+border_bottom=0
+border_left=0
+
+
+[time]
+command=$script_dir/time.sh
+interval=5
+label=<span color="#ff79c6"> </span>
+border=#ff79c6
+border_top=1
+border_right=0
+border_bottom=0
+border_left=0

@@ -11,6 +11,7 @@ import = [
 
 live_config_reload = true
 shell = "/usr/bin/zsh"
+# shell = "/usr/bin/pwsh"
 
 [window]
 decorations = "None"
