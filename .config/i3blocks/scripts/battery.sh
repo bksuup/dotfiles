@@ -7,14 +7,14 @@ BAT=$(cat /sys/class/power_supply/BAT0/capacity)
 STATE=$(cat /sys/class/power_supply/BAT0/status)
 
 if [[ $STATE == "Charging" ]]; then
-    echo "BAT <span foreground='yellow'>󱐋</span>$BAT%"
+    echo "<span foreground='yellow'>󱐋</span>$BAT%"
     exit 0
 fi
 
 if (( $BAT < 20 )); then
-    echo "BAT $BAT%"
+    echo "$BAT%"
     exit 33
 fi
 
-echo "BAT $BAT%"
+echo "$BAT%"
 exit 0

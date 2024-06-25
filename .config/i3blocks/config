@@ -25,7 +25,6 @@ border_left=0
 [wifi]
 command=$script_dir/wifi.sh
 interval=10
-label=<span color="#1793d1">󰖩 </span>
 border=#1793d1
 border_top=1
 border_right=0
