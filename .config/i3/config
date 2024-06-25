@@ -187,7 +187,6 @@ default_border pixel 1
 
 # Egne keybinds
 bindsym $sup+w exec --no-startup-id firefox
-# bindsym $sup+w exec --no-startup-id flatpak run com.brave.Browser
 bindsym $sup+e exec --no-startup-id nautilus
 bindsym $sup+d exec --no-startup-id flatpak run com.discordapp.Discord
 
@@ -198,9 +197,6 @@ bindsym $sup+Shift+f exec --no-startup-id flameshot screen -c -p /home/$USER/Pic
 # i3lock m/ bakgrunnsbilde
 # bindsym $sup+l exec i3lock -e -i ~/git/dotfiles/.config/i3/background/firewatch.png
 bindsym $sup+l exec i3lock -e -c 000000
-
-# AUTOSTART
-exec_always --no-startup-id dex --autostart --environment i3
 
 # exec_always --no-startup-id feh --bg-fill $HOME/git/dotfiles/.config/i3/background/firewatch.png
 # exec_always --no-startup-id feh --bg-fill $HOME/Downloads/115h9yls3o271.webp
@@ -223,3 +219,6 @@ gaps inner 4
 # Scratchpad
 bindsym $mod+minus scratchpad show
 bindsym $mod+Shift+minus move scratchpad
+
+# AUTOSTART
+exec_always --no-startup-id dex --autostart --environment i3
