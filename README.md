@@ -1,3 +1,21 @@
 # Dotfiles
 
-Font: Fira Code
+Font: Fira Code Nerd Font
+
+## Dependencies
+
+### Zsh
+
+[Zinit](https://github.com/zdharma-continuum/zinit?tab=readme-ov-file#zinit-wiki) \
+[Oh-My-Posh](https://ohmyposh.dev/docs/)
+
+### Tmux
+
+[TPM](https://github.com/tmux-plugins/tpm)
+
+### Neovim
+
+- npm
+- ripgrep
+- python3-pip
+- python3-venv
