@@ -12,8 +12,8 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
     type = 'session'
     style = 'plain'
     background = 'transparent'
-    foreground = 'blue'
-    template = "{{ if .SSHSession }}{{ .HostName }}󰢹{{ end }}"
+    foreground = 'lightRed'
+    template = "{{ if .SSHSession }} {{.UserName}}  {{ .HostName }} {{ end }}"
 
   [[blocks.segments]]
     type = 'path'
@@ -30,7 +30,7 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
     style = 'plain'
     foreground = 'p:grey'
     background = 'transparent'
-    template = ' {{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}*{{ end }}'
+    template = ' {{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}<lightYellow>*</>{{ end }}'
 
     [blocks.segments.properties]
       branch_icon = ''

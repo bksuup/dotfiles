@@ -22,9 +22,9 @@ history = 100000
 multiplier = 4
 
 [font]
-normal = { family = "Fira Code", style = "Regular" }
-bold = { family = "Fira Code", style = "Medium" }
-italic = { family = "Fira Code", style = "Light" }
+normal = { family = "Fira Code Nerd Font Propo", style = "Regular" }
+bold = { family = "Fira Code Nerd Font Propo", style = "Medium" }
+italic = { family = "Fira Code Nerd Font Propo", style = "Light" }
 size = 8
 
 [bell]
