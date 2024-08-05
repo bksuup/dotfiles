@@ -5,7 +5,7 @@ align=center
 # color=#f5f5f5
 separator=false
 separator_block_width=15
-script_dir=/home/bk/git/dotfiles/.config/i3blocks/scripts/
+script_dir=/home/bk/dotfiles/.config/i3blocks/scripts/
 markup=pango
 
 # Blocks

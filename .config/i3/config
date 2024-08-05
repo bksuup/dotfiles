@@ -32,7 +32,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # sudo chmod +s $(which brightnessctl)
 bindsym XF86MonBrightnessUp   exec --no-startup-id brightnessctl --min-value=1 set +7%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl --min-value=1 set 7%-
-bindsym $sup+space exec --no-startup-id ~/.local/bin/backlight
+bindsym $sup+space exec --no-startup-id ~/.local/bin/backlight.sh
 
 # PLAYERCTL
 bindsym $sup+Right  exec --no-startup-id playerctl next
