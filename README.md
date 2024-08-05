@@ -13,9 +13,3 @@ Font: Fira Code Nerd Font
 
 [TPM](https://github.com/tmux-plugins/tpm)
 
-### Neovim
-
-- npm
-- ripgrep
-- python3-pip
-- python3-venv
