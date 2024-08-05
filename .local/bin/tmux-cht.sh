@@ -2,7 +2,10 @@
 
 # Shamelessly stolen from https://github.com/ThePrimeagen/.dotfiles
 
-selected=`cat ~/.tmux-cht-languages ~/.tmux-cht-command | fzf`
+LANGUAGES="$HOME/dotfiles/.config/tmux/.tmux-cht-languages"
+COMMAND="$HOME/dotfiles/.config/tmux/.tmux-cht-command"
+
+selected=`cat $COMMAND $LANGUAGES | fzf`
 if [[ -z $selected ]]; then
     exit 0
 fi
