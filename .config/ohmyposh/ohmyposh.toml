@@ -1,4 +1,5 @@
 # https://github.com/dreamsofautonomy/zen-omp/blob/main/zen.toml
+# With modifications
 
 version = 2
 final_space = true
@@ -36,20 +37,6 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
       branch_icon = ''
       commit_icon = '@'
       fetch_status = true
-
-[[blocks]]
-  type = 'rprompt'
-  overflow = 'hidden'
-
-  [[blocks.segments]]
-    type = 'executiontime'
-    style = 'plain'
-    foreground = 'yellow'
-    background = 'transparent'
-    template = '{{ .FormattedMs }}'
-
-    [blocks.segments.properties]
-      threshold = 5000
 
 [[blocks]]
   type = 'prompt'
