@@ -17,3 +17,10 @@ set scrolloff=8
 set showmode
 
 set autochdir
+
+" Enkle keybinds for bedre navigering
+" Setter <leader> til mellomrom
+let mapleader = " "
+
+" <leader>pv åpner netrw-view
+nnoremap <leader>pv :Ex<CR>
