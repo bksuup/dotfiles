@@ -1,7 +1,7 @@
 # Zsh configuration
 # Mostly taken from https://github.com/dreamsofautonomy/zensh/blob/main/.zshrc
 
-export PATH=$PATH:/home/$USER/.local/bin
+export PATH=$PATH:/home/$USER/.local/bin:/usr/local/go/bin
 
 #############
 # Zinit Stuff
