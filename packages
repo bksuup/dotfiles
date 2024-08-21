@@ -3,7 +3,6 @@ firefox
 terminator
 fzf
 zsh
-feh
 arandr
 autorandr
 neovim
@@ -11,8 +10,6 @@ tmux
 alacritty
 flameshot
 dunst
-picom
-rofi
 papirus-icon-theme
 pavucontrol
 bluez
