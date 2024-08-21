@@ -13,11 +13,6 @@ alias la='ls -lA --group-directories-first'
 ## i3 spesific
 alias i3conf='vim ~/.config/i3/config'
 
-## Batcat
-alias md='bat -l 'md''
-alias yaml='bat -l 'YAML''
-alias csv='bat -l 'csv''
-
 ## Dev
 alias vim='nvim'
 alias tm='tmux'
