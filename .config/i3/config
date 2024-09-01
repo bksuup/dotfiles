@@ -51,9 +51,12 @@ bindsym $mod+Return exec --no-startup-id alacritty
 bindsym $mod+Shift+q kill
 
 # Rofi
-bindsym $mod+d exec --no-startup-id rofi -show drun
-bindsym XF86Calculator exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort
-bindsym $mod+Ctrl+Tab exec --no-startup-id rofi -show window
+# bindsym $mod+d exec --no-startup-id rofi -show drun
+# bindsym XF86Calculator exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort
+# bindsym $mod+Ctrl+Tab exec --no-startup-id rofi -show window
+
+# Dmenu
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -fn "FiraCode Nerd Font Propo-12"'
 
 # change focus
 bindsym $mod+h focus left

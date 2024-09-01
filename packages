@@ -24,3 +24,5 @@ man-pages
 fd
 tlp
 python-pip
+brightnessctl
+playerctl
