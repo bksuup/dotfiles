@@ -19,6 +19,3 @@ alias tm='tmux'
 
 ## Docker
 alias dim='docker image ls'
-
-## Azure CLI
-alias auth='az login --service-principal --username cff19edc-968d-47e3-be0a-1146ff44cf62 --tenant 06fec4e0-87df-4f76-894d-7c5595a731bd --password'
