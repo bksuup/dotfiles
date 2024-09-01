@@ -75,5 +75,9 @@ if [ -f ~/.zsh_aliases ]; then
         . ~/.zsh_aliases
 fi
 
+if [ -f ~/.iac_aliases ]; then
+        . ~/.iac_aliases
+fi
+
 # Shell integrations
 # source "$(fzf --zsh)"
