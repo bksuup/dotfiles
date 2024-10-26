@@ -4,17 +4,17 @@
 # https://github.com/alacritty/alacritty-theme?tab=readme-ov-file
 # Alacritty themes
 
-import = [
+general.import = [
 #  "~/dotfiles/.config/alacritty/catppuccin-frappe.toml"
 #  "~/dotfiles/.config/alacritty/rose-pine.toml"
 ]
 
-live_config_reload = true
-shell = "/usr/bin/zsh"
+general.live_config_reload = true
+terminal.shell = "/usr/bin/zsh"
 # shell = "/usr/bin/pwsh"
 
 [window]
-decorations = "None"
+decorations = "Full"
 startup_mode = "Maximized"
 
 [scrolling]
@@ -25,6 +25,7 @@ multiplier = 4
 normal = { family = "Fira Code Nerd Font Propo", style = "Regular" }
 bold = { family = "Fira Code Nerd Font Propo", style = "Medium" }
 italic = { family = "Fira Code Nerd Font Propo", style = "Light" }
+# size = 16
 size = 8
 
 [bell]
