@@ -20,7 +20,7 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
     type = 'path'
     style = 'plain'
     background = 'transparent'
-    foreground = 'blue'
+    foreground = 'darkGray'
     template = '{{ .Path }}'
 
     [blocks.segments.properties]
@@ -48,16 +48,16 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
     style = 'plain'
     foreground_templates = [
       "{{if gt .Code 0}}red{{end}}",
-      "{{if eq .Code 0}}magenta{{end}}",
+      "{{if eq .Code 0}}darkGray{{end}}",
     ]
     background = 'transparent'
-    template = '❯'
-    
+    template = ' '
+
 
 [transient_prompt]
   foreground_templates = [
     "{{if gt .Code 0}}red{{end}}",
-    "{{if eq .Code 0}}magenta{{end}}",
+    "{{if eq .Code 0}}darkGray{{end}}",
   ]
   background = 'transparent'
-    template = '❯'
+    template = ' '
