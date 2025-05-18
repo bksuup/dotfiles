@@ -5,13 +5,13 @@
 layer								= top
 font								= "Fira Code Nerd Font 12"
 follow								= none
-notification_limit					= 2
+notification_limit						= 2
 
 # size, position and appearance
 frame_width							= 2
 width								= 400
 height								= 400
-origin								= top-right
+origin								= top-center
 offset								= 20x20
 corner_radius						= 0
 

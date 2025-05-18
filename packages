@@ -1,6 +1,5 @@
 i3
 firefox
-terminator
 fzf
 zsh
 arandr
@@ -10,7 +9,6 @@ tmux
 alacritty
 flameshot
 dunst
-papirus-icon-theme
 pavucontrol
 bluez
 bluez-utils

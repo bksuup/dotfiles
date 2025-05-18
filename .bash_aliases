@@ -1,7 +1,6 @@
 # alias
 
 ## System greier
-alias ud='sudo apt update && sudo apt upgrade -y && flatpak update -y'
 alias grep='grep --color=tty'
 alias cp="cp -i"			# confirm before overwrite
 alias df='df -h'                        # human-readable sizes

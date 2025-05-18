@@ -1,40 +1,47 @@
-# https://github.com/dreamsofautonomy/zen-omp/blob/main/zen.toml
-# With modifications
-
-version = 2
-final_space = true
 console_title_template = '{{ .Shell }} in {{ .Folder }}'
+version = 3
+final_space = true
+
+[transient_prompt]
+  template = ' '
+  background = 'transparent'
+  foreground_templates = ['{{if gt .Code 0}}red{{end}}', '{{if eq .Code 0}}darkGray{{end}}']
 
 [[blocks]]
   type = 'prompt'
   alignment = 'left'
 
   [[blocks.segments]]
+    template = '{{ if .SSHSession }} {{.UserName}}  {{ .HostName }} {{ end }}'
+    foreground = 'lightRed'
+    background = 'transparent'
     type = 'session'
     style = 'plain'
-    background = 'transparent'
-    foreground = 'lightRed'
-    template = "{{ if .SSHSession }} {{.UserName}}  {{ .HostName }} {{ end }}"
-
-  [[blocks.segments]]
-    type = 'path'
-    style = 'plain'
-    background = 'transparent'
-    foreground = 'darkGray'
-    template = '{{ .Path }}'
 
     [blocks.segments.properties]
+      cache_duration = 'none'
+
+  [[blocks.segments]]
+    template = '{{ .Path }}'
+    foreground = 'darkGray'
+    background = 'transparent'
+    type = 'path'
+    style = 'plain'
+
+    [blocks.segments.properties]
+      cache_duration = 'none'
       style = 'full'
 
   [[blocks.segments]]
-    type = 'git'
-    style = 'plain'
+    template = ' {{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}<lightYellow>*</>{{ end }}'
     foreground = 'p:grey'
     background = 'transparent'
-    template = ' {{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}<lightYellow>*</>{{ end }}'
+    type = 'git'
+    style = 'plain'
 
     [blocks.segments.properties]
       branch_icon = ''
+      cache_duration = 'none'
       commit_icon = '@'
       fetch_status = true
 
@@ -44,20 +51,11 @@ console_title_template = '{{ .Shell }} in {{ .Folder }}'
   newline = true
 
   [[blocks.segments]]
+    template = ' '
+    background = 'transparent'
     type = 'text'
     style = 'plain'
-    foreground_templates = [
-      "{{if gt .Code 0}}red{{end}}",
-      "{{if eq .Code 0}}darkGray{{end}}",
-    ]
-    background = 'transparent'
-    template = ' '
+    foreground_templates = ['{{if gt .Code 0}}red{{end}}', '{{if eq .Code 0}}darkGray{{end}}']
 
-
-[transient_prompt]
-  foreground_templates = [
-    "{{if gt .Code 0}}red{{end}}",
-    "{{if eq .Code 0}}darkGray{{end}}",
-  ]
-  background = 'transparent'
-    template = ' '
+    [blocks.segments.properties]
+      cache_duration = 'none'

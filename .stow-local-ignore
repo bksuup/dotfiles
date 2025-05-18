@@ -32,3 +32,4 @@ packages
 .*.jpg
 .*.png
 .*.webp
+.gitconfig

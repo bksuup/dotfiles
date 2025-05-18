@@ -10,12 +10,8 @@ alias free='free -m'                    # show sizes in MB
 alias l='ls -l --group-directories-first'
 alias la='ls -lA --group-directories-first'
 
-## i3 spesific
-alias i3conf='vim ~/.config/i3/config'
-
 ## Dev
 alias vim='nvim'
 alias tm='tmux'
 
-## Docker
-alias dim='docker image ls'
+alias tree='tree -I .git -a'

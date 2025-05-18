@@ -21,12 +21,6 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3blocks
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3blocks
 
-# set $refresh_i3status killall -SIGUSR1 i3status
-# bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
-# bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
-# bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-# bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
-
 # Brightnessctl
 # For å bruke brightnessctl uten sudo
 # sudo chmod +s $(which brightnessctl)
@@ -49,11 +43,6 @@ bindsym $mod+Return exec --no-startup-id alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
-
-# Rofi
-# bindsym $mod+d exec --no-startup-id rofi -show drun
-# bindsym XF86Calculator exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort
-# bindsym $mod+Ctrl+Tab exec --no-startup-id rofi -show window
 
 # Dmenu
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='dmenu -i -fn "FiraCode Nerd Font Propo-12"'
@@ -108,17 +97,6 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
-
-# set $ws1 "1:󰣇"
-# set $ws2 "2:"
-# set $ws3 "3:"
-# set $ws4 "4:"
-# set $ws5 "5:"
-# set $ws6 "6"
-# set $ws7 "7"
-# set $ws8 "8"
-# set $ws9 "9"
-# set $ws10 "10"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -193,8 +171,8 @@ bar {
     strip_workspace_numbers yes
     tray_output primary    
     font pango: Fira Code Nerd Font Propo Regular 12
-#    status_command i3status
     status_command i3blocks
+    position top
 }
 
 # Fjerne titlebar
@@ -203,7 +181,6 @@ default_border pixel 1
 # Egne keybinds
 bindsym $sup+w exec --no-startup-id firefox
 bindsym $sup+e exec --no-startup-id nautilus
-bindsym $sup+d exec --no-startup-id flatpak run com.discordapp.Discord
 
 # FLAMESHOT
 bindsym $sup+shift+s exec --no-startup-id  flameshot gui -s -c
@@ -213,8 +190,6 @@ bindsym $sup+Shift+f exec --no-startup-id flameshot screen -c -p /home/$USER/Pic
 # bindsym $sup+l exec i3lock -e -i ~/git/dotfiles/.config/i3/background/firewatch.png
 bindsym $sup+l exec i3lock -e -c 000000
 
-# exec_always --no-startup-id feh --bg-fill $HOME/git/dotfiles/.config/i3/background/firewatch.png
-# exec_always --no-startup-id feh --bg-fill $HOME/Downloads/115h9yls3o271.webp
 # exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 exec_always --no-startup-id dunst
 exec_always --no-startup-id blueman-applet
