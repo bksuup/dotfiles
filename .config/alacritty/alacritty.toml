@@ -16,7 +16,7 @@ multiplier = 4
 normal = { family = "Fira Code Nerd Font Propo", style = "Regular" }
 bold = { family = "Fira Code Nerd Font Propo", style = "Medium" }
 italic = { family = "Fira Code Nerd Font Propo", style = "Light" }
-size = 8
+size = 16
 
 [bell]
 duration = 0
