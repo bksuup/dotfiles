@@ -33,3 +33,5 @@ packages
 .*.png
 .*.webp
 .gitconfig
+
+install.sh
