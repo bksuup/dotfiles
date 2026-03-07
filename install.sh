@@ -6,7 +6,7 @@
 mkdir -p ~/.local/bin
 
 # Remove unwanted packages installed by default ###
-sudo pacman -R epiphany
+sudo pacman --noconfirm -R epiphany
 
 # install yay
 sudo pacman -S --needed --noconfirm git base-devel
