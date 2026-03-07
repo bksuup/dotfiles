@@ -27,3 +27,7 @@ playerctl
 stow
 ttf-firacode-nerd
 dmenu
+signal-desktop
+btop
+jq
+tldr
