@@ -1,14 +1,5 @@
 # Dotfiles
 
-Font: Fira Code Nerd Font
-
-## Dependencies
-
-### Zsh
-
-[Zinit](https://github.com/zdharma-continuum/zinit?tab=readme-ov-file#zinit-wiki) \
-[Oh-My-Posh](https://ohmyposh.dev/docs/)
-
 ## Install
 
 1. Create directory, if not, all files within ~/.local/bin/ will be added to the repo, including ohmyposh binary
