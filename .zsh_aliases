@@ -17,3 +17,4 @@ alias tm='tmux'
 alias tree='tree -I .git -a'
 
 alias k='kubectl'
+alias tf='terraform'

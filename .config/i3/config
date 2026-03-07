@@ -193,7 +193,7 @@ exec_always --no-startup-id dunst
 exec_always --no-startup-id blueman-applet
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id autorandr -c
-# exec_always --no-startup-id setxkbmap -option caps:swapescape
+exec_always --no-startup-id setxkbmap -option caps:swapescape
 
 # Change kblayout
 set $refresh_keyboard pkill -SIGRTMIN+11 i3blocks
