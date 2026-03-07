@@ -11,4 +11,5 @@ sudo pacman -R epiphany
 # install yay
 sudo pacman -S --needed --noconfirm git base-devel
 git clone https://aur.archlinux.org/yay.git
-cd yay makepkg -si
+cd yay
+makepkg -si
