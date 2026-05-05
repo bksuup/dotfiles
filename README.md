@@ -1,3 +1,7 @@
+# ARCHIVE
+
+This repository has been archived and moved to [gitlab](https://gitlab.com/bksuup/dotfiles)
+
 # Dotfiles
 
 ## Install
