@@ -11,7 +11,7 @@ alias l='ls -l --group-directories-first'
 alias la='ls -lA --group-directories-first'
 
 ## Dev
-alias v='nvim'
+alias vim='nvim'
 alias tm='tmux'
 
 alias tree='tree -I .git -a'
