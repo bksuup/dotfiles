@@ -25,10 +25,7 @@ _darcs
 
 # Self-added
 
-.bashrc
-.bash_aliases
 packages
-.zshrc.bak
 .*.jpg
 .*.png
 .*.webp
